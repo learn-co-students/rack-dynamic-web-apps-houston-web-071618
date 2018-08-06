@@ -13,7 +13,6 @@ describe "an ok request" do
       numbers[index]
       index+=1
     }
-
     get '/'
     expect(last_response.body).to include("You Lose")
   end
